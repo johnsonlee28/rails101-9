@@ -16,3 +16,16 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body{
+  display: grid;
+  min-height: 100vh;
+  grid-gap:15px 20px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 150px auto 100px;
+}
+
+.header,
+.footer{
+  grid-column-end: span 2;
+}
