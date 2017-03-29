@@ -8,6 +8,7 @@
         <th>#</th>
         <th>Title</th>
         <th>Description</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -18,7 +19,8 @@
         <td><%= group.description %></td>
         <td>
           <%= link_to("Edit", edit_group_path(group), class:"btn btn-default") %>
-          <%= link_to("Delete", group_path(group), method: :delete, :data => {:confirm => "Are you sure?"}) %>
+          <%= link_to("Delete", group_path(group), method: :delete, :data => {:confirm => "Are you sure?"},
+                      class:"btn btn-default") %>
         </td>
       </tr>
       <% end %>
