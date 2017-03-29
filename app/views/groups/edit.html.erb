@@ -1,0 +1,17 @@
+<div class="col-md-12">
+  <h1>编辑讨论组</h1>
+
+  <hr>
+  <%= form_for @group do |f| %>
+  标题
+  <%= f.text_field :title %>
+  <br>
+  <br>
+  叙述
+  <%= f.text_area :description %>
+  <br>
+  <br>
+  <%= f.submit "Submit", :disable_with => "Submiting..." %>
+  <% end %>
+
+</div>
